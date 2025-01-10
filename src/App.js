@@ -1,13 +1,24 @@
 import React, { useState } from "react";
+import { connect } from "react-redux";
 import Card from "./Card";
 import { robots } from "./robort";
 import SearchBox from "./SearchBox";
 import Scroll from "./Scroll";
+import { setSearchField } from "./action";
 import ErrorBoundry from "./ErrorBoundry";
-const App = () => {
+const mapStateToProps = (state) => {
+  return {
+    searchField: "hello",
+    // state.searchRobots.searchField,
+  };
+};
+const mapDispatchToProps = (dispatch) => ({
+  onSearchChange: (event) => dispatch(setSearchField(event.target.value)),
+});
+const App = ({ store }) => {
   const [searchResult, setSearchResult] = useState("");
 
-  console.log(robots);
+  console.log(store);
   return (
     <div className="App tc ">
       <h1> Robo Friends</h1>
@@ -28,4 +39,4 @@ const App = () => {
   );
 };
 
-export default App;
+export default connect(mapStateToProps, mapDispatchToProps)(App);
