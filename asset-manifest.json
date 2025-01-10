@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/keko/static/css/main.ae279993.css",
-    "main.js": "/keko/static/js/main.1d1e630b.js",
+    "main.js": "/keko/static/js/main.a4737fe7.js",
     "index.html": "/keko/index.html",
     "main.ae279993.css.map": "/keko/static/css/main.ae279993.css.map",
-    "main.1d1e630b.js.map": "/keko/static/js/main.1d1e630b.js.map"
+    "main.a4737fe7.js.map": "/keko/static/js/main.a4737fe7.js.map"
   },
   "entrypoints": [
     "static/css/main.ae279993.css",
-    "static/js/main.1d1e630b.js"
+    "static/js/main.a4737fe7.js"
   ]
 }
